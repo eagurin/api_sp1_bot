@@ -10,7 +10,7 @@ load_dotenv()
 PRACTICUM_TOKEN = os.getenv("PRACTICUM_TOKEN")
 TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN')
 CHAT_ID = os.getenv('TELEGRAM_CHAT_ID')
-URL = 'https://praktikum.yandex.ru/api/user_api/homework_statuses/'
+URL = os.getenv('https://praktikum.yandex.ru/api/user_api/homework_statuses/')
 
 
 def parse_homework_status(homework):
